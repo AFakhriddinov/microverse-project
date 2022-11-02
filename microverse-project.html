@@ -8,32 +8,45 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1 id="title">freeCodeCamp Survey Form</h1>
-  <p class="description">Thank you for taking the time to help us improve the platform</p>
-  <form action="" id="survey-form">
-      <label>Name</label>
-      <input type="text" required>
-      <label>email</label>
-      <input type="email" required>
-      <label>Age(optional)</label>
-      <input type="number" min="10" max="40">
-      <select name="" id="dropdown">
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
+    <form id="survey-form">
+      <label id="name-label">name</label>
+      <input required placeholder="Enter your name" type="text" id="name"/>
 
-        <option value="">Which option best describes your current role?</option>
-        <option value="dog">Dog</option>
-        <option value="cat">Cat</option>
-        <option value="parrot">Parrot</option>
-        <option value="spider">Spider</option>
-        <option value="goldfish">Goldfish</option>
-    </select>
+      <label id="email-label">email</label>
+      <input placeholder="Enter your email" required type="email" id="email"/>
 
-    <label >Would you recommend freeCodeCamp to a friend?</label>
-    <input type="radio" name="drone " >
-    <label >definitely</label><input type="radio" name="drone " >
-    <label >definitely</label><input type="radio" name="drone " >
-    <label >definitely</label>
-    
-  </form>
+      <label id="number-label">Age</label>
+      <input placeholder="Enter your age" type="number" id="number" min="10"  max="20"/>
+      <label id="number-label">select one</label>
+      <select id="dropdown">
+        <option>1</option>
+        <option>2</option>
+      </select> 
+      <label id="gender-label">Select gender</label>
+      <input value="male" type="radio" name="gender" id="male" />
+      <label for="male">Male</label><br>
+
+      <input value="female" type="radio" name="gender" id="female" />
+      <label for="female">Female</label><br>
+
+
+      <label id="gender-label">What would you like to see improved? (Check all that apply)</label>
+
+      <input type="checkbox" id="person1" name="person1" value="Tom">
+      <label for="person1"> This is Tome</label><br>
+      <input type="checkbox" id="person2" name="person2" value="Bob">
+      <label for="person2"> This is Bob</label><br>
+      <input type="checkbox" id="person3" name="person3" value="George">
+      <label for="person3"> This is George</label><br><br>
+
+      <textarea id="text"></textarea><br>
+
+       <button type="submit" id="submit">Submit</button>
+    </form>
     
 </body>
 </html>
